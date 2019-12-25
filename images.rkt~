@@ -1,0 +1,4 @@
+#lang racket
+(require 2htdp/image)
+(define turkey (bitmap/file "turkey.jpeg"))
+(set! turkey (scale/xy (/ 900 1400) (/ 900 1400) turkey))
